@@ -1,0 +1,104 @@
+{
+  "nav": {
+    "dashboard": "Overview",
+    "products": "Products",
+    "products.list": "Product List",
+    "products.categories": "Categories",
+    "products.brands": "Brands",
+    "products.promotions": "Promotions",
+    "products.warehouse": "Warehouse",
+    "products.warehouses": "Warehouses",
+    "products.inventory": "Inventory",
+    "products.tools": "Tools",
+    "products.barcodeScanner": "Barcode Scanner",
+    "orders": "Orders",
+    "customers": "Customers",
+    "employees": "Employees",
+    "cashbook": "Cash book",
+    "reports": "Reports",
+    "onlineSales": "Online Channels",
+    "sales": "Sales",
+    "profile": "Profile",
+    "storeProfile": "Store Profile",
+    "logout": "Logout"
+  },
+  "roles": {
+    "owner": "Owner",
+    "admin": "Admin",
+    "member": "Member"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome to TER",
+    "description": "Manage your business efficiently with TER"
+  },
+  "languages": {
+    "english": "English",
+    "vietnamese": "Tiếng Việt"
+  },
+  "profile": {
+    "title": "Profile",
+    "personalInfo": "Personal Information",
+    "settings": "Settings",
+    "security": "Security",
+    "devices": "Devices",
+    "sessions": "Sessions",
+    "fields": {
+      "fullName": "Full Name",
+      "email": "Email",
+      "phoneNumber": "Phone Number",
+      "gender": "Gender",
+      "dateOfBirth": "Date of Birth",
+      "address": "Address",
+      "facebook": "Facebook",
+      "avatarUrl": "Avatar URL",
+      "language": "Language",
+      "timezone": "Timezone",
+      "startOfWeek": "Start of Week",
+      "notifications": {
+        "email": "Email Notifications",
+        "push": "Push Notifications"
+      }
+    },
+    "genders": {
+      "male": "Male",
+      "female": "Female"
+    },
+    "weeks": {
+      "monday": "Monday",
+      "sunday": "Sunday"
+    },
+    "actions": {
+      "save": "Save Changes",
+      "cancel": "Cancel",
+      "edit": "Edit",
+      "search": "Search"
+    },
+    "messages": {
+      "updateSuccess": "Profile updated successfully",
+      "updateError": "Failed to update profile",
+      "fetchError": "Failed to load profile information",
+      "noDevices": "No devices found",
+      "noSessions": "No sessions found"
+    },
+    "tabs": {
+      "personal": "Personal Information",
+      "settings": "Settings",
+      "security": "Security",
+      "devices": "Devices",
+      "sessions": "Sessions"
+    },
+    "deviceFields": {
+      "deviceName": "Device",
+      "platform": "Platform",
+      "ipAddress": "IP Address",
+      "lastSeenAt": "Last Seen"
+    },
+    "sessionFields": {
+      "userAgent": "User Agent",
+      "ipAddress": "IP Address",
+      "createdAt": "Created At"
+    }
+  }
+}
+

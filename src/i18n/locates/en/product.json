@@ -1,0 +1,611 @@
+{
+  "productTable": {
+    "toolbar": {
+      "title": "Product list",
+      "selected": "{{count}} selected",
+      "deleteSelected": "Delete all selected",
+      "searchPlaceholder": "Search products",
+      "add": "Add product",
+      "import": "Import file",
+      "export": "Export file",
+      "columnPicker": "Select visible columns"
+    },
+    "columns": {
+      "image": "Image",
+      "name": "Product name",
+      "sku": "SKU",
+      "barcode": "Barcode",
+      "salePrice": "Sale price",
+      "costPrice": "Cost price",
+      "brand": "Brand",
+      "stock": "Stock on hand",
+      "allocated": "Allocated",
+      "status": "Status",
+      "createdAt": "Created at",
+      "createdBy": "Created by",
+      "updatedAt": "Updated at",
+      "updatedBy": "Updated by"
+    },
+    "filters": {
+      "name": "Search name",
+      "sku": "Search SKU",
+      "barcode": "Search barcode",
+      "brand": "Select brand",
+      "status": "Select status",
+      "createdBy": "Select creator",
+      "updatedBy": "Select updater",
+      "rangeMin": "From",
+      "rangeMax": "To",
+      "rangeApply": "Filter",
+      "rangeReset": "Reset"
+    },
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive",
+      "draft": "Draft"
+    },
+    "actions": {
+      "view": "View details",
+      "edit": "Edit",
+      "delete": "Delete",
+      "copy": "Copy",
+      "printBarcode": "Print barcode",
+      "deactivate": "Deactivate",
+      "activate": "Activate",
+      "markActive": "Mark as active"
+    },
+    "expanded": {
+      "sku": "SKU",
+      "description": "Description",
+      "category": "Category",
+      "brand": "Brand",
+      "barcode": "Barcode",
+      "cost": "Cost",
+      "sale": "Sale price",
+      "stock": "Stock",
+      "allocated": "Allocated",
+      "status": "Status",
+      "allowSellOut": "Allow sell out of stock",
+      "createdAt": "Created at",
+      "createdBy": "Created by",
+      "updatedAt": "Updated at",
+      "updatedBy": "Updated by",
+      "yes": "Yes",
+      "no": "No",
+      "variants": "Variants ({{count}})",
+      "variant": {
+        "sku": "SKU",
+        "barcode": "Barcode",
+        "attrs": "Attributes",
+        "cost": "Cost",
+        "sale": "Sale",
+        "stock": "Stock",
+        "allocated": "Allocated",
+        "status": "Status",
+        "allowSellOut": "Allow sell out of stock"
+      },
+      "noDescription": "No description"
+    },
+    "confirm": {
+      "deleteOne": "Are you sure you want to delete product \"{{name}}\"?",
+      "deleteTitle": "Confirm delete",
+      "deleteSelected": "Are you sure you want to delete {{count}} selected products?",
+      "deactivateTitle": "Confirm deactivate",
+      "deactivateMessage": "Are you sure you want to deactivate product \"{{name}}\"?"
+    },
+    "pagination": {
+      "total": "{{from}}-{{to}} / {{total}}"
+    }
+  },
+  "productsPage": {
+    "title": "Product list",
+    "toolbar": {
+      "selected": "{{count}} selected",
+      "deleteSelected": "Delete all",
+      "searchPlaceholder": "Search products",
+      "add": "Add product",
+      "import": "Import file",
+      "export": "Export file"
+    },
+    "columnPicker": {
+      "title": "Select visible columns"
+    },
+    "delete": {
+      "title": "Confirm delete",
+      "message": "Are you sure you want to delete product \"{{name}}\"?",
+      "confirm": "Delete",
+      "cancel": "Cancel"
+    },
+    "deleteSelected": {
+      "title": "Confirm delete",
+      "content": "Are you sure you want to delete {{count}} selected products?",
+      "confirm": "Delete",
+      "cancel": "Cancel"
+    },
+    "messages": {
+      "deleteSuccess": "Product deleted successfully",
+      "deleteError": "Failed to delete product",
+      "deleteSelectedSuccess": "Deleted {{count}} products successfully",
+      "deleteSelectedError": "Failed to delete products",
+      "downloadSampleSuccess": "Sample file downloaded successfully",
+      "downloadSampleError": "Failed to download sample file",
+      "importSuccess": "Imported {{count}} products successfully",
+      "importError": "Failed to import products",
+      "fetchError": "Failed to load products",
+      "exportSuccess": "Exported file successfully",
+      "exportError": "Failed to export file"
+    },
+    "import": {
+      "invalidType": "Only CSV or Excel files (.csv, .xlsx, .xls) are accepted",
+      "noSheet": "Excel file has no sheets",
+      "readError": "Cannot read Excel file",
+      "noFile": "Please select a file to import",
+      "noSheetSelected": "Please select at least one sheet to import"
+    },
+    "export": {
+      "columns": {
+        "name": "Product name",
+        "sku": "SKU",
+        "barcode": "Barcode",
+        "categoryId": "Category (ID)",
+        "categoryName": "Category (Name)",
+        "parentCategoryId": "Parent category (ID)",
+        "parentCategoryName": "Parent category (Name)",
+        "brandId": "Brand (ID)",
+        "brandName": "Brand (Name)",
+        "description": "Description",
+        "status": "Status",
+        "allowSellOutOfStock": "Allow sell out of stock",
+        "hasVariants": "Has variants",
+        "cost": "Cost price",
+        "sale": "Sale price",
+        "stockOnHand": "Stock on hand",
+        "variantSku": "Variant SKU",
+        "variantBarcode": "Variant barcode",
+        "variantAttributes": "Variant attributes",
+        "variantCost": "Variant cost",
+        "variantSale": "Variant sale",
+        "variantStockOnHand": "Variant stock on hand",
+        "imageMain": "Main image",
+        "image1": "Image 1",
+        "image2": "Image 2",
+        "image3": "Image 3",
+        "image4": "Image 4",
+        "createdAt": "Created at",
+        "updatedAt": "Updated at",
+        "createdById": "Created by (ID)",
+        "createdByName": "Created by (Name)",
+        "createdByEmail": "Created by (Email)",
+        "createdByAvatar": "Created by (Avatar)",
+        "updatedById": "Updated by (ID)",
+        "updatedByName": "Updated by (Name)",
+        "updatedByEmail": "Updated by (Email)",
+        "updatedByAvatar": "Updated by (Avatar)"
+      },
+      "filters": {
+        "fields": {
+          "name": "Product name",
+          "sku": "SKU",
+          "barcode": "Barcode",
+          "status": "Status",
+          "brandId": "Brand (ID)",
+          "categoryId": "Category (ID)"
+        },
+        "operators": {
+          "contains": "Contains",
+          "equals": "Equals"
+        },
+        "valuePlaceholder": "Enter or select values"
+      }
+    }
+  },
+  "productModal": {
+    "header": {
+      "editTitle": "Edit product",
+      "createTitle": "Create product"
+    },
+    "tabs": {
+      "info": "Information",
+      "description": "Description"
+    },
+    "fields": {
+      "sku": {
+        "label": "SKU",
+        "placeholder": "Enter SKU"
+      },
+      "status": {
+        "label": "Status",
+        "options": {
+          "draft": "Draft",
+          "active": "Active",
+          "inactive": "Inactive"
+        }
+      },
+      "name": {
+        "label": "Product name",
+        "placeholder": "Enter product name"
+      },
+      "category": {
+        "label": "Category",
+        "placeholder": "Search or create",
+        "notFound": "Not found",
+        "addNew": "Add new category"
+      },
+      "brand": {
+        "label": "Brand",
+        "placeholder": "Search or create",
+        "notFound": "Not found",
+        "addNew": "Add new brand"
+      },
+      "barcode": {
+        "label": "Barcode",
+        "placeholder": "Enter barcode",
+        "scan": "Scan barcode"
+      },
+      "stockOnHand": {
+        "label": "Stock on hand"
+      },
+      "cost": {
+        "label": "Cost price"
+      },
+      "sale": {
+        "label": "Sale price"
+      },
+      "allowSellOutOfStock": "Allow sell out of stock",
+      "descriptionTitle": "Product description",
+      "descriptionPlaceholder": "Enter product description..."
+    },
+    "images": {
+      "add": "Add images",
+      "sizeHint": "Each image must be under 2MB",
+      "remaining": "{{count}} slots left",
+      "thumbnailAlt": "Image {{index}}",
+      "mainAlt": "Main image"
+    },
+    "variants": {
+      "toggleLabel": "Product variants:",
+      "deleteAllAttrs": "Remove all attributes",
+      "generateAll": "Generate all variants",
+      "selectAttribute": "Select attribute",
+      "selectValue": "Select value",
+      "addAttribute": "Add attribute",
+      "addValue": "Add value",
+      "panelTitle": "Variant {{index}}",
+      "deleteVariant": {
+        "title": "Delete variant?"
+      },
+      "variantLabel": "Variant",
+      "variantPlaceholder": "Auto generated from attributes",
+      "empty": "No variants yet. Select attributes/values then click \"Generate all variants\"."
+      ,
+      "listTitle": "Variants ({{count}})"
+    },
+    "common": {
+      "yes": "Yes",
+      "no": "No",
+      "delete": "Delete",
+      "cancel": "Cancel",
+      "save": "Save"
+    },
+    "scanner": {
+      "title": "Scan barcode",
+      "errorTitle": "Error",
+      "initError": "Cannot initialize scanner. Please try again.",
+      "cameraErrorTitle": "Cannot access camera",
+      "cameraErrorContent": "Please allow camera access to scan barcode or enter it manually."
+    },
+    "upload": {
+      "invalidTitle": "Invalid file",
+      "imageOnly": "Only image files are allowed",
+      "tooLargeTitle": "Image too large",
+      "tooLargeContent": "Image \"{{name}}\" exceeds {{max}}MB. Maximum size is {{max}}MB.",
+      "limitTitle": "Image limit reached",
+      "limitContent": "You can upload up to 5 images. Remove existing images before adding more.",
+      "limitContentExisting": "You already have 5 images. Remove some before adding more.",
+      "tooManyTitle": "Too many images selected",
+      "tooManyContent": "You selected {{selected}} images but only {{remaining}} slots remain. Only the first {{remaining}} will be added.",
+      "invalidListTitle": "Some files are invalid",
+      "invalidListContent": "These files cannot be uploaded:\n{{files}}",
+      "reasonNotImage": "Not an image file",
+      "reasonTooLarge": "Exceeds {{max}}MB",
+      "unknownName": "Unknown"
+    },
+    "variantGen": {
+      "noAttributeTitle": "No attribute selected",
+      "noAttributeContent": "Select at least one attribute and value to generate variants.",
+      "noValueTitle": "No attribute values selected",
+      "noValueContent": "Select at least one value for each attribute.",
+      "cannotGenerateTitle": "Cannot generate variants",
+      "successTitle": "Variants generated",
+      "successContent": "Created {{count}} variants."
+    },
+    "errors": {
+      "nameRequired": "Product name is required",
+      "skuRequired": "SKU is required",
+      "variantsRequired": "At least one variant is required",
+      "variantSkuRequired": "Variant SKU is required",
+      "submit": "An error occurred while saving the product",
+      "delete": "Failed to delete product"
+    },
+    "deleteModal": {
+      "title": "Delete product?",
+      "content": "Are you sure you want to delete this product? This action cannot be undone."
+    },
+    "bulkEdit": {
+      "title": "Bulk edit",
+      "apply": "Apply",
+      "cost": "Cost price",
+      "sale": "Sale price",
+      "stockOnHand": "Stock on hand",
+      "placeholder": "Leave blank to keep unchanged"
+    }
+  },
+  "exportModal": {
+    "title": "Export products",
+    "actions": {
+      "cancel": "Cancel",
+      "export": "Export file"
+    },
+    "columns": {
+      "title": "Select columns to export",
+      "placeholder": "Select columns",
+      "selectAll": "Select all",
+      "clear": "Clear"
+    },
+    "filters": {
+      "title": "Filters",
+      "add": "Add condition",
+      "empty": "No conditions yet. Click \"Add condition\" to start.",
+      "where": "WHERE",
+      "joiner": {
+        "and": "AND",
+        "or": "OR"
+      },
+      "fieldPlaceholder": "Select field",
+      "operatorPlaceholder": "Select operator",
+      "valuePlaceholder": "Value",
+      "remove": "Delete"
+    }
+  },
+  "importModal": {
+    "sheet": {
+      "title": "Select sheets to import",
+      "description": "Excel file has {{count}} sheets. Please select the sheets you want to import:"
+    },
+    "config": {
+      "title": "Import products from file"
+    },
+    "actions": {
+      "cancel": "Cancel",
+      "continue": "Continue",
+      "downloadSample": "Download sample file",
+      "chooseFile": "Choose file",
+      "startImport": "Start import",
+      "close": "Close"
+    },
+    "guide": {
+      "title": "Import guide:",
+      "step1": "Download the sample file to see the data structure",
+      "step2": "Excel file has 3 sheets: Non-variant, Variant, Mixed",
+      "step3": "Fill product info following the correct format",
+      "step4": "Images: use URLs (main, images 1-4), up to 5 images",
+      "step5": "Category/Brand: you can enter names; system will create if not existing",
+      "step6": "Variants: enter variant SKU and attributes (format: Attribute:Value,Attribute:Value)"
+    },
+    "options": {
+      "common": {
+        "stop": "Raise error and stop import",
+        "skip": "Skip and report later",
+        "replace": "Replace with new value",
+        "link": "Link to existing",
+        "create": "Create new"
+      },
+      "duplicateSku": { "title": "When SKU duplicates:" },
+      "duplicateCategory": { "title": "When category duplicates:" },
+      "invalidImageUrl": {
+        "title": "When image URL is invalid:",
+        "skip": "Skip invalid image"
+      },
+      "duplicateBarcode": {
+        "title": "When barcode duplicates:",
+        "replace": "Skip barcode"
+      },
+      "duplicateBrand": { "title": "When brand duplicates:" },
+      "duplicateVariantSku": { "title": "When variant SKU duplicates:" },
+      "missingRequired": { "title": "When required field is missing:" }
+    },
+    "result": {
+      "title": "Import result",
+      "summary": {
+        "total": "Total: {{total}}",
+        "success": "Success: {{success}}",
+        "failed": "Failed: {{failed}}"
+      },
+      "errors": {
+        "title": "Error details:"
+      },
+      "products": {
+        "title": "Created products ({{count}}):"
+      }
+    }
+  }
+  ,
+  "inventoryPage": {
+    "title": "Inventory",
+    "searchPlaceholder": "Search product / barcode / SKU",
+    "warehousePlaceholder": "Select warehouse",
+    "actions": {
+      "refresh": "Refresh",
+      "import": "Import file",
+      "export": "Export file",
+      "bulk": "Bulk update"
+    },
+    "messages": {
+      "fetchError": "Failed to load inventory",
+      "exportError": "Failed to export file",
+      "importSuccess": "Import success: {{success}} / {{total}}",
+      "importError": "Import failed",
+      "bulkSuccess": "Updated: {{success}} succeeded",
+      "bulkError": "Bulk update failed"
+    },
+    "quickUpdate": {
+      "title": "Quick update",
+      "currentWarehouse": "Current warehouse",
+      "fields": {
+        "mode": "Mode",
+        "warehouse": "Warehouse",
+        "stock": "Stock on hand"
+      },
+      "placeholders": {
+        "warehouse": "Select warehouse"
+      },
+      "actions": {
+        "cancel": "Cancel",
+        "save": "Save"
+      },
+      "validation": {
+        "warehouse": "Please select warehouse"
+      }
+    }
+  },
+  "inventoryTable": {
+    "columns": {
+      "product": "Product",
+      "variant": "Variant",
+      "warehouse": "Warehouse",
+      "stockOnHand": "Stock on hand",
+      "brand": "Brand",
+      "category": "Category",
+      "status": "Status",
+      "updatedAt": "Updated at",
+      "actions": "Actions"
+    },
+    "labels": {
+      "sku": "SKU",
+      "barcode": "Barcode",
+      "noVariant": "No variant"
+    },
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive",
+      "draft": "Draft"
+    },
+    "pagination": {
+      "total": "{{from}}-{{to}} / {{total}}"
+    },
+    "actions": {
+      "update": "Update"
+    }
+  },
+  "inventoryImport": {
+    "title": "Import inventory",
+    "actions": {
+      "downloadSample": "Download sample",
+      "start": "Start import"
+    },
+    "mode": {
+      "label": "Update mode",
+      "set": "Set (replace)",
+      "increment": "Increment",
+      "decrement": "Decrement"
+    },
+    "applyTo": {
+      "label": "Apply to",
+      "mixed": "Both product & variants",
+      "base": "Product only (no variant)",
+      "variant": "Variants only"
+    },
+    "file": {
+      "label": "Choose file",
+      "choose": "Choose CSV / Excel file"
+    },
+    "note": "Excel supports 3 sheets: BaseOnly, VariantOnly, Mixed. Required columns: sku/barcode or variantSku/variantBarcode, warehouseId/code/name, stockOnHand, mode/applyTo (optional).",
+    "invalidType": "Only CSV or Excel files are supported",
+    "noFile": "Please choose a file"
+  },
+  "inventoryExport": {
+    "title": "Export inventory",
+    "actions": {
+      "cancel": "Cancel",
+      "export": "Export file"
+    },
+    "columns": {
+      "title": "Select columns",
+      "placeholder": "Select columns",
+      "selectAll": "Select all",
+      "clear": "Clear",
+      "productId": "Product ID",
+      "productName": "Product name",
+      "sku": "Product SKU",
+      "barcode": "Product barcode",
+      "variantSku": "Variant SKU",
+      "variantBarcode": "Variant barcode",
+      "warehouseId": "Warehouse ID",
+      "warehouseName": "Warehouse name",
+      "warehouseCode": "Warehouse code",
+      "stockOnHand": "Stock on hand",
+      "brandName": "Brand",
+      "categoryName": "Category",
+      "status": "Status",
+      "updatedAt": "Updated at"
+    },
+    "filters": {
+      "title": "Filters",
+      "sku": "Product SKU",
+      "barcode": "Product barcode",
+      "variantSku": "Variant SKU",
+      "variantBarcode": "Variant barcode",
+      "warehouse": "Warehouse",
+      "search": "Search"
+    }
+  },
+  "inventoryBulk": {
+    "title": "Bulk inventory update",
+    "actions": {
+      "cancel": "Cancel",
+      "submit": "Update",
+      "remove": "Remove",
+      "addRow": "Add row"
+    },
+    "fields": {
+      "mode": "Mode",
+      "applyTo": "Apply to",
+      "sku": "Product SKU",
+      "barcode": "Product barcode",
+      "variantSku": "Variant SKU",
+      "variantBarcode": "Variant barcode",
+      "warehouse": "Warehouse (ID/Code/Name)",
+      "stock": "Stock on hand",
+      "modeRow": "Mode",
+      "applyToRow": "Apply to"
+    },
+    "options": {
+      "mode": {
+        "set": "Set (replace)",
+        "increment": "Increment",
+        "decrement": "Decrement"
+      },
+      "applyTo": {
+        "mixed": "Both product & variants",
+        "base": "Product only",
+        "variant": "Variants only"
+      }
+    },
+    "placeholders": {
+      "sku": "SKU",
+      "barcode": "Barcode",
+      "variantSku": "Variant SKU",
+      "variantBarcode": "Variant barcode",
+      "warehouse": "e.g. WH-01",
+      "inherit": "Inherit"
+    },
+    "validation": {
+      "warehouse": "Enter warehouse",
+      "stock": "Enter stock"
+    },
+    "errors": {
+      "noItem": "Please add at least one row"
+    }
+  }
+}
+

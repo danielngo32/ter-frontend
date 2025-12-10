@@ -1,0 +1,236 @@
+{
+  "modal": {
+    "createTitle": "Thêm khách hàng",
+    "editTitle": "Chỉnh sửa khách hàng"
+  },
+  "fields": {
+    "name": "Tên khách hàng",
+    "gender": "Giới tính",
+    "title": "Danh xưng",
+    "birthday": "Ngày sinh",
+    "lastActivityAt": "Hoạt động cuối",
+    "phones": "Điện thoại",
+    "emails": "Email",
+    "phone1": "Điện thoại 1",
+    "phone2": "Điện thoại 2",
+    "email1": "Email 1",
+    "email2": "Email 2",
+    "addressLine": "Địa chỉ",
+    "provinceName": "Tỉnh/Thành",
+    "provinceCode": "Mã tỉnh",
+    "wardName": "Phường/Xã",
+    "wardCode": "Mã phường/xã",
+    "note": "Ghi chú",
+    "avatarUrl": "Liên kết ảnh đại diện"
+  },
+  "placeholders": {
+    "name": "Nhập tên khách hàng",
+    "nameTitle": "Danh xưng",
+    "gender": "Danh xưng",
+    "phone1": "Nhập số điện thoại 1",
+    "phone2": "Nhập số điện thoại 2",
+    "email1": "Nhập email 1",
+    "email2": "Nhập email 2",
+    "addressLine": "Số nhà, đường...",
+    "provinceName": "Tên tỉnh/thành",
+    "provinceCode": "Mã tỉnh",
+    "wardName": "Tên phường/xã",
+    "wardCode": "Mã phường/xã",
+    "note": "Thêm ghi chú",
+    "avatarUrl": "URL ảnh đại diện"
+  },
+  "sections": {
+    "address": "Địa chỉ"
+  },
+  "gender": {
+    "male": "Nam",
+    "female": "Nữ",
+    "other": "Khác"
+  },
+  "title": {
+    "male": "Anh",
+    "female": "Chị",
+    "other": "Chưa rõ"
+  },
+  "actions": {
+    "save": "Lưu",
+    "cancel": "Hủy",
+    "delete": "Xóa",
+    "deleteTitle": "Xóa khách hàng",
+    "deleteConfirm": "Bạn chắc chắn muốn xóa khách hàng này?",
+    "deleteSelectedTitle": "Xóa nhiều khách hàng",
+    "deleteSelectedConfirm": "Bạn chắc chắn muốn xóa {{count}} khách hàng đã chọn?"
+  },
+  "messages": {
+    "createSuccess": "Tạo khách hàng thành công",
+    "updateSuccess": "Cập nhật khách hàng thành công",
+    "deleteSuccess": "Đã xóa khách hàng",
+    "deleteFailed": "Xóa thất bại",
+    "actionFailed": "Thao tác thất bại",
+    "loadError": "Không tải được thông tin khách hàng",
+    "importSuccess": "Nhập dữ liệu thành công",
+    "importFailed": "Nhập thất bại",
+    "exportSuccess": "Xuất file thành công",
+    "exportFailed": "Xuất file thất bại",
+    "noFile": "Vui lòng chọn file",
+    "deleteSelectedSuccess": "Đã xóa {{count}} khách hàng",
+    "deleteSelectedFailed": "Xóa thất bại"
+  },
+  "errors": {
+    "nameRequired": "Tên khách hàng là bắt buộc",
+    "codeTooLong": "Mã quá dài (tối đa 50 ký tự)",
+    "provinceRequired": "Vui lòng chọn Tỉnh/Thành",
+    "phoneInvalid": "Số điện thoại phải có ít nhất 9 chữ số",
+    "emailInvalid": "Email không hợp lệ",
+    "birthdayInvalid": "Định dạng ngày không hợp lệ (DD/MM/YYYY)"
+  },
+  "tooltips": {
+    "readonly": "Chỉ hiển thị",
+    "multiValue": "Ngăn cách bởi ; hoặc ,"
+  },
+  "table": {
+    "columns": {
+      "avatar": "Ảnh đại diện",
+      "name": "Tên",
+      "gender": "Giới tính",
+      "phone1": "Điện thoại 1",
+      "phone2": "Điện thoại 2",
+      "email1": "Email 1",
+      "email2": "Email 2",
+      "birthday": "Ngày sinh",
+      "province": "Tỉnh/Thành",
+      "ward": "Phường/Xã",
+      "lastActivityAt": "Hoạt động cuối",
+      "createdAt": "Thời gian tạo",
+      "createdBy": "Người tạo",
+      "updatedAt": "Thời gian cập nhật",
+      "updatedBy": "Người cập nhật"
+    },
+    "filters": {
+      "name": "Tìm theo tên",
+      "gender": "Chọn giới tính",
+      "phone": "Tìm theo số điện thoại",
+      "email": "Tìm theo email",
+      "province": "Chọn tỉnh/thành",
+      "ward": "Tìm theo phường/xã",
+      "createdBy": "Chọn người tạo",
+      "updatedBy": "Chọn người cập nhật",
+      "apply": "Áp dụng",
+      "reset": "Đặt lại"
+    },
+    "expanded": {
+      "gender": "Giới tính",
+      "birthday": "Ngày sinh",
+      "phone1": "Điện thoại 1",
+      "phone2": "Điện thoại 2",
+      "email1": "Email 1",
+      "email2": "Email 2",
+      "addressLine": "Địa chỉ",
+      "province": "Tỉnh/Thành",
+      "ward": "Phường/Xã",
+      "note": "Ghi chú",
+      "lastActivityAt": "Hoạt động cuối",
+      "createdAt": "Tạo lúc",
+      "createdBy": "Người tạo",
+      "updatedAt": "Cập nhật",
+      "updatedBy": "Người cập nhật"
+    },
+    "actions": {
+      "view": "Xem",
+      "edit": "Sửa",
+      "delete": "Xóa"
+    },
+    "pagination": {
+      "total": "Hiển thị {{from}}-{{to}} / {{total}}"
+    }
+  },
+  "page": {
+    "title": "Khách hàng",
+    "searchPlaceholder": "Tìm kiếm khách hàng",
+    "add": "Thêm khách hàng",
+    "import": "Nhập file",
+    "export": "Xuất file",
+    "selected": "{{count}} đã chọn",
+    "deleteSelected": "Xóa đã chọn",
+    "columnPicker": {
+      "title": "Chọn cột hiển thị"
+    }
+  },
+  "detail": {
+    "back": "Quay lại",
+    "basic": "Thông tin",
+    "contact": "Liên hệ",
+    "activity": "Hoạt động",
+    "noData": "Không tìm thấy khách hàng"
+  },
+  "import": {
+    "title": "Nhập khách hàng",
+    "chooseFile": "Chọn file",
+    "start": "Bắt đầu nhập",
+    "downloadSample": "Tải file mẫu",
+    "mode": "Chế độ",
+    "modeCreate": "Tạo mới",
+    "modeUpsert": "Cập nhật hoặc tạo",
+    "duplicateCode": "Trùng mã",
+    "duplicateContact": "Trùng điện thoại/email",
+    "optionStop": "Dừng",
+    "optionSkip": "Bỏ qua",
+    "optionUpsert": "Cập nhật",
+    "guide": {
+      "title": "Hướng dẫn",
+      "step1": "Tải file mẫu để xem định dạng dữ liệu",
+      "step2": "Điền thông tin khách hàng vào file Excel/CSV",
+      "step3": "Chọn file và cấu hình các tùy chọn import",
+      "step4": "Nhấn 'Bắt đầu nhập' để thực hiện import"
+    },
+    "options": {
+      "mode": {
+        "title": "Chế độ import"
+      },
+      "duplicateContact": {
+        "title": "Xử lý trùng điện thoại/email"
+      }
+    }
+  },
+  "exportModal": {
+    "title": "Xuất khách hàng",
+    "actions": {
+      "cancel": "Hủy",
+      "export": "Xuất file"
+    },
+    "columns": {
+      "title": "Chọn cột cần xuất",
+      "placeholder": "Chọn cột muốn xuất",
+      "selectAll": "Chọn tất cả",
+      "clear": "Bỏ chọn"
+    },
+    "filters": {
+      "title": "Bộ lọc",
+      "add": "Thêm điều kiện",
+      "empty": "Chưa có điều kiện nào. Nhấn \"Thêm điều kiện\" để bắt đầu.",
+      "where": "WHERE",
+      "joiner": {
+        "and": "AND",
+        "or": "OR"
+      },
+      "fieldPlaceholder": "Chọn trường",
+      "operatorPlaceholder": "Chọn so sánh",
+      "valuePlaceholder": "Giá trị",
+      "remove": "Xóa",
+      "fields": {
+        "name": "Tên",
+        "phone1": "Điện thoại 1",
+        "phone2": "Điện thoại 2",
+        "email1": "Email 1",
+        "email2": "Email 2",
+        "gender": "Giới tính",
+        "provinceName": "Tỉnh/Thành"
+      },
+      "operators": {
+        "contains": "Chứa",
+        "equals": "Bằng"
+      }
+    }
+  }
+}
+

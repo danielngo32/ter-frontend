@@ -1,0 +1,611 @@
+{
+  "productTable": {
+    "toolbar": {
+      "title": "Danh sách hàng hóa",
+      "selected": "{{count}} đã chọn",
+      "deleteSelected": "Xóa tất cả",
+      "searchPlaceholder": "Tìm kiếm sản phẩm",
+      "add": "Thêm sản phẩm",
+      "import": "Nhập file",
+      "export": "Xuất file",
+      "columnPicker": "Chọn cột hiển thị"
+    },
+    "columns": {
+      "image": "Hình ảnh",
+      "name": "Tên hàng hóa",
+      "sku": "Mã hàng",
+      "barcode": "Mã vạch",
+      "salePrice": "Giá bán",
+      "costPrice": "Giá vốn",
+      "brand": "Thương hiệu",
+      "stock": "Tồn kho",
+      "allocated": "Khách đặt",
+      "status": "Trạng thái",
+      "createdAt": "Thời gian tạo",
+      "createdBy": "Người tạo",
+      "updatedAt": "Thời gian cập nhật",
+      "updatedBy": "Người cập nhật"
+    },
+    "filters": {
+      "name": "Tìm theo tên",
+      "sku": "Tìm theo mã hàng",
+      "barcode": "Tìm theo mã vạch",
+      "brand": "Chọn thương hiệu",
+      "status": "Chọn trạng thái",
+      "createdBy": "Chọn người tạo",
+      "updatedBy": "Chọn người cập nhật",
+      "rangeMin": "Từ",
+      "rangeMax": "Đến",
+      "rangeApply": "Lọc",
+      "rangeReset": "Đặt lại"
+    },
+    "status": {
+      "active": "Đang bán",
+      "inactive": "Ngừng bán",
+      "draft": "Nháp"
+    },
+    "actions": {
+      "view": "Xem chi tiết",
+      "edit": "Chỉnh sửa",
+      "delete": "Xóa",
+      "copy": "Sao chép",
+      "printBarcode": "In mã vạch",
+      "deactivate": "Ngừng bán",
+      "activate": "Tiếp tục bán",
+      "markActive": "Cập nhật thành đang bán"
+    },
+    "expanded": {
+      "sku": "Mã hàng",
+      "description": "Mô tả",
+      "category": "Danh mục",
+      "brand": "Thương hiệu",
+      "barcode": "Mã vạch",
+      "cost": "Giá vốn",
+      "sale": "Giá bán",
+      "stock": "Tồn kho",
+      "allocated": "Khách đặt",
+      "status": "Trạng thái",
+      "allowSellOut": "Bán khi hết hàng",
+      "createdAt": "Tạo lúc",
+      "createdBy": "Người tạo",
+      "updatedAt": "Cập nhật",
+      "updatedBy": "Người cập nhật",
+      "yes": "Có",
+      "no": "Không",
+      "variants": "Biến thể ({{count}})",
+      "variant": {
+        "sku": "Mã hàng",
+        "barcode": "Mã vạch",
+        "attrs": "Thuộc tính",
+        "cost": "Giá vốn",
+        "sale": "Giá bán",
+        "stock": "Tồn kho",
+        "allocated": "Khách đặt",
+        "status": "Trạng thái",
+        "allowSellOut": "Bán khi hết hàng"
+      },
+      "noDescription": "Chưa có mô tả"
+    },
+    "confirm": {
+      "deleteOne": "Bạn có chắc chắn muốn xóa sản phẩm \"{{name}}\"?",
+      "deleteTitle": "Xác nhận xóa",
+      "deleteSelected": "Bạn có chắc chắn muốn xóa {{count}} sản phẩm đã chọn?",
+      "deactivateTitle": "Xác nhận ngừng bán",
+      "deactivateMessage": "Bạn có chắc chắn muốn ngừng bán sản phẩm \"{{name}}\"?"
+    },
+    "pagination": {
+      "total": "{{from}}-{{to}} / {{total}}"
+    }
+  },
+  "productsPage": {
+    "title": "Danh sách hàng hóa",
+    "toolbar": {
+      "selected": "{{count}} đã chọn",
+      "deleteSelected": "Xóa tất cả",
+      "searchPlaceholder": "Tìm kiếm sản phẩm",
+      "add": "Thêm sản phẩm",
+      "import": "Nhập file",
+      "export": "Xuất file"
+    },
+    "columnPicker": {
+      "title": "Chọn cột hiển thị"
+    },
+    "delete": {
+      "title": "Xác nhận xóa",
+      "message": "Bạn có chắc chắn muốn xóa sản phẩm \"{{name}}\"?",
+      "confirm": "Xóa",
+      "cancel": "Hủy"
+    },
+    "deleteSelected": {
+      "title": "Xác nhận xóa",
+      "content": "Bạn có chắc chắn muốn xóa {{count}} sản phẩm đã chọn?",
+      "confirm": "Xóa",
+      "cancel": "Hủy"
+    },
+    "messages": {
+      "deleteSuccess": "Xóa sản phẩm thành công",
+      "deleteError": "Xóa sản phẩm thất bại",
+      "deleteSelectedSuccess": "Đã xóa {{count}} sản phẩm thành công",
+      "deleteSelectedError": "Xóa sản phẩm thất bại",
+      "downloadSampleSuccess": "Tải file mẫu thành công",
+      "downloadSampleError": "Tải file mẫu thất bại",
+      "importSuccess": "Import thành công {{count}} sản phẩm",
+      "importError": "Import sản phẩm thất bại",
+      "fetchError": "Không thể tải danh sách sản phẩm",
+      "exportSuccess": "Xuất file thành công",
+      "exportError": "Xuất file thất bại"
+    },
+    "import": {
+      "invalidType": "Chỉ chấp nhận file CSV hoặc Excel (.csv, .xlsx, .xls)",
+      "noSheet": "File Excel không có sheet nào",
+      "readError": "Không thể đọc file Excel",
+      "noFile": "Vui lòng chọn file để import",
+      "noSheetSelected": "Vui lòng chọn ít nhất một sheet để import"
+    },
+    "export": {
+      "columns": {
+        "name": "Tên hàng hóa",
+        "sku": "Mã hàng",
+        "barcode": "Mã vạch",
+        "categoryId": "Danh mục (ID)",
+        "categoryName": "Danh mục (Tên)",
+        "parentCategoryId": "Danh mục cha (ID)",
+        "parentCategoryName": "Danh mục cha (Tên)",
+        "brandId": "Thương hiệu (ID)",
+        "brandName": "Thương hiệu (Tên)",
+        "description": "Mô tả",
+        "status": "Trạng thái",
+        "allowSellOutOfStock": "Cho phép bán khi hết hàng",
+        "hasVariants": "Có biến thể",
+        "cost": "Giá vốn",
+        "sale": "Giá bán",
+        "stockOnHand": "Tồn kho",
+        "variantSku": "Mã hàng biến thể",
+        "variantBarcode": "Mã vạch biến thể",
+        "variantAttributes": "Thuộc tính biến thể",
+        "variantCost": "Giá vốn biến thể",
+        "variantSale": "Giá bán biến thể",
+        "variantStockOnHand": "Tồn kho biến thể",
+        "imageMain": "Ảnh đại diện sản phẩm",
+        "image1": "Ảnh 1",
+        "image2": "Ảnh 2",
+        "image3": "Ảnh 3",
+        "image4": "Ảnh 4",
+        "createdAt": "Thời gian tạo",
+        "updatedAt": "Thời gian cập nhật",
+        "createdById": "Người tạo (ID)",
+        "createdByName": "Người tạo (Tên)",
+        "createdByEmail": "Người tạo (Email)",
+        "createdByAvatar": "Người tạo (Avatar)",
+        "updatedById": "Người cập nhật (ID)",
+        "updatedByName": "Người cập nhật (Tên)",
+        "updatedByEmail": "Người cập nhật (Email)",
+        "updatedByAvatar": "Người cập nhật (Avatar)"
+      },
+      "filters": {
+        "fields": {
+          "name": "Tên hàng hóa",
+          "sku": "Mã hàng",
+          "barcode": "Mã vạch",
+          "status": "Trạng thái",
+          "brandId": "Thương hiệu (ID)",
+          "categoryId": "Danh mục (ID)"
+        },
+        "operators": {
+          "contains": "Chứa",
+          "equals": "Bằng"
+        },
+        "valuePlaceholder": "Nhập hoặc chọn giá trị"
+      }
+    }
+  },
+  "productModal": {
+    "header": {
+      "editTitle": "Chỉnh sửa hàng hóa",
+      "createTitle": "Tạo hàng hóa"
+    },
+    "tabs": {
+      "info": "Thông tin",
+      "description": "Mô tả"
+    },
+    "fields": {
+      "sku": {
+        "label": "Mã hàng",
+        "placeholder": "Nhập mã hàng"
+      },
+      "status": {
+        "label": "Trạng thái",
+        "options": {
+          "draft": "Bản nháp",
+          "active": "Đang hoạt động",
+          "inactive": "Ngừng hoạt động"
+        }
+      },
+      "name": {
+        "label": "Tên sản phẩm",
+        "placeholder": "Nhập tên sản phẩm"
+      },
+      "category": {
+        "label": "Danh mục",
+        "placeholder": "Tìm kiếm hoặc tạo mới",
+        "notFound": "Không tìm thấy",
+        "addNew": "Thêm danh mục mới"
+      },
+      "brand": {
+        "label": "Thương hiệu",
+        "placeholder": "Tìm kiếm hoặc tạo mới",
+        "notFound": "Không tìm thấy",
+        "addNew": "Thêm thương hiệu mới"
+      },
+      "barcode": {
+        "label": "Mã vạch",
+        "placeholder": "Nhập mã vạch",
+        "scan": "Quét mã vạch"
+      },
+      "stockOnHand": {
+        "label": "Tồn kho"
+      },
+      "cost": {
+        "label": "Giá vốn"
+      },
+      "sale": {
+        "label": "Giá bán"
+      },
+      "allowSellOutOfStock": "Cho phép bán khi hết hàng",
+      "descriptionTitle": "Mô tả sản phẩm",
+      "descriptionPlaceholder": "Nhập mô tả sản phẩm..."
+    },
+    "images": {
+      "add": "Thêm ảnh",
+      "sizeHint": "Mỗi ảnh không quá 2 MB",
+      "remaining": "Còn {{count}} vị trí",
+      "thumbnailAlt": "Ảnh {{index}}",
+      "mainAlt": "Ảnh đại diện"
+    },
+    "variants": {
+      "toggleLabel": "Biến thể sản phẩm:",
+      "deleteAllAttrs": "Xóa tất cả thuộc tính",
+      "generateAll": "Tạo tất cả biến thể",
+      "selectAttribute": "Chọn thuộc tính",
+      "selectValue": "Chọn giá trị",
+      "addAttribute": "Thêm thuộc tính",
+      "addValue": "Thêm giá trị",
+      "panelTitle": "Biến thể {{index}}",
+      "deleteVariant": {
+        "title": "Xóa biến thể?"
+      },
+      "variantLabel": "Biến thể",
+      "variantPlaceholder": "Tự động từ thuộc tính",
+      "empty": "Chưa có biến thể. Chọn thuộc tính/giá trị rồi bấm \"Tạo tất cả biến thể\"."
+      ,
+      "listTitle": "Danh sách biến thể ({{count}})"
+    },
+    "common": {
+      "yes": "Có",
+      "no": "Không",
+      "delete": "Xóa",
+      "cancel": "Hủy",
+      "save": "Lưu"
+    },
+    "scanner": {
+      "title": "Quét mã vạch",
+      "errorTitle": "Lỗi",
+      "initError": "Không thể khởi tạo scanner. Vui lòng thử lại.",
+      "cameraErrorTitle": "Không thể truy cập camera",
+      "cameraErrorContent": "Vui lòng cho phép truy cập camera để quét mã vạch hoặc nhập mã vạch thủ công."
+    },
+    "upload": {
+      "invalidTitle": "File không hợp lệ",
+      "imageOnly": "Chỉ được phép upload file ảnh",
+      "tooLargeTitle": "Ảnh quá lớn",
+      "tooLargeContent": "Ảnh \"{{name}}\" vượt quá {{max}}MB. Kích thước tối đa là {{max}}MB.",
+      "limitTitle": "Đã đủ ảnh",
+      "limitContent": "Chỉ được phép upload tối đa 5 ảnh. Vui lòng xóa ảnh hiện có trước khi thêm ảnh mới.",
+      "limitContentExisting": "Bạn đã có đủ 5 ảnh. Vui lòng xóa ảnh hiện có trước khi thêm ảnh mới.",
+      "tooManyTitle": "Quá nhiều ảnh được chọn",
+      "tooManyContent": "Bạn đã chọn {{selected}} ảnh nhưng chỉ còn {{remaining}} vị trí trống. Chỉ {{remaining}} ảnh đầu tiên sẽ được thêm vào.",
+      "invalidListTitle": "Một số file không hợp lệ",
+      "invalidListContent": "Các file sau không thể upload:\n{{files}}",
+      "reasonNotImage": "Không phải file ảnh",
+      "reasonTooLarge": "Vượt quá {{max}}MB",
+      "unknownName": "Không xác định"
+    },
+    "variantGen": {
+      "noAttributeTitle": "Chưa chọn thuộc tính",
+      "noAttributeContent": "Vui lòng chọn ít nhất một thuộc tính và giá trị để tạo biến thể.",
+      "noValueTitle": "Chưa chọn giá trị thuộc tính",
+      "noValueContent": "Vui lòng chọn ít nhất một giá trị cho mỗi thuộc tính.",
+      "cannotGenerateTitle": "Không thể tạo biến thể",
+      "successTitle": "Tạo biến thể thành công",
+      "successContent": "Đã tạo {{count}} biến thể."
+    },
+    "errors": {
+      "nameRequired": "Tên sản phẩm là bắt buộc",
+      "skuRequired": "SKU là bắt buộc",
+      "variantsRequired": "Ít nhất phải có 1 biến thể",
+      "variantSkuRequired": "Mã hàng là bắt buộc",
+      "submit": "Có lỗi xảy ra khi lưu sản phẩm",
+      "delete": "Xóa sản phẩm thất bại"
+    },
+    "deleteModal": {
+      "title": "Xóa sản phẩm?",
+      "content": "Bạn có chắc chắn muốn xóa sản phẩm này? Hành động không thể hoàn tác."
+    },
+    "bulkEdit": {
+      "title": "Chỉnh sửa đồng loạt",
+      "apply": "Áp dụng",
+      "cost": "Giá vốn",
+      "sale": "Giá bán",
+      "stockOnHand": "Tồn kho",
+      "placeholder": "Để trống nếu không thay đổi"
+    }
+  },
+  "exportModal": {
+    "title": "Xuất sản phẩm",
+    "actions": {
+      "cancel": "Hủy",
+      "export": "Xuất file"
+    },
+    "columns": {
+      "title": "Chọn cột cần xuất",
+      "placeholder": "Chọn cột muốn xuất",
+      "selectAll": "Chọn tất cả",
+      "clear": "Bỏ chọn"
+    },
+    "filters": {
+      "title": "Bộ lọc",
+      "add": "Thêm điều kiện",
+      "empty": "Chưa có điều kiện nào. Nhấn \"Thêm điều kiện\" để bắt đầu.",
+      "where": "WHERE",
+      "joiner": {
+        "and": "AND",
+        "or": "OR"
+      },
+      "fieldPlaceholder": "Chọn trường",
+      "operatorPlaceholder": "Chọn so sánh",
+      "valuePlaceholder": "Giá trị",
+      "remove": "Xóa"
+    }
+  },
+  "importModal": {
+    "sheet": {
+      "title": "Chọn sheet để import",
+      "description": "File Excel có {{count}} sheet. Vui lòng chọn sheet(s) bạn muốn import:"
+    },
+    "config": {
+      "title": "Nhập sản phẩm từ file"
+    },
+    "actions": {
+      "cancel": "Hủy",
+      "continue": "Tiếp tục",
+      "downloadSample": "Tải file mẫu",
+      "chooseFile": "Chọn file",
+      "startImport": "Bắt đầu import",
+      "close": "Đóng"
+    },
+    "guide": {
+      "title": "Hướng dẫn import:",
+      "step1": "Tải file mẫu để xem cấu trúc dữ liệu",
+      "step2": "File Excel có 3 sheets: Không biến thể, Có biến thể, Trộn",
+      "step3": "Điền thông tin sản phẩm theo đúng format",
+      "step4": "Ảnh: sử dụng URL (ảnh đại diện, ảnh 1-4), tối đa 5 ảnh",
+      "step5": "Danh mục/Thương hiệu: có thể nhập tên, hệ thống sẽ tự động tạo nếu chưa có",
+      "step6": "Biến thể: nhập Mã hàng biến thể và Thuộc tính biến thể (format: Thuộc tính:Giá trị,Thuộc tính:Giá trị)"
+    },
+    "options": {
+      "common": {
+        "stop": "Báo lỗi và dừng import",
+        "skip": "Bỏ qua và báo lỗi sau",
+        "replace": "Thay thế bằng giá trị mới",
+        "link": "Liên kết với dữ liệu đã có",
+        "create": "Tạo mới"
+      },
+      "duplicateSku": { "title": "Xử lý khi trùng mã hàng (SKU):" },
+      "duplicateCategory": { "title": "Xử lý khi trùng danh mục:" },
+      "invalidImageUrl": {
+        "title": "Xử lý khi URL ảnh không hợp lệ:",
+        "skip": "Bỏ qua ảnh không hợp lệ"
+      },
+      "duplicateBarcode": {
+        "title": "Xử lý khi trùng mã vạch:",
+        "replace": "Bỏ qua mã vạch"
+      },
+      "duplicateBrand": { "title": "Xử lý khi trùng thương hiệu:" },
+      "duplicateVariantSku": { "title": "Xử lý khi trùng mã hàng biến thể:" },
+      "missingRequired": { "title": "Xử lý khi thiếu trường bắt buộc:" }
+    },
+    "result": {
+      "title": "Kết quả import sản phẩm",
+      "summary": {
+        "total": "Tổng số: {{total}}",
+        "success": "Thành công: {{success}}",
+        "failed": "Thất bại: {{failed}}"
+      },
+      "errors": {
+        "title": "Chi tiết lỗi:"
+      },
+      "products": {
+        "title": "Sản phẩm đã tạo ({{count}}):"
+      }
+    }
+  }
+  ,
+  "inventoryPage": {
+    "title": "Tồn kho",
+    "searchPlaceholder": "Tìm kiếm sản phẩm / barcode / SKU",
+    "warehousePlaceholder": "Chọn kho",
+    "actions": {
+      "refresh": "Làm mới",
+      "import": "Nhập file",
+      "export": "Xuất file",
+      "bulk": "Cập nhật hàng loạt"
+    },
+    "messages": {
+      "fetchError": "Không tải được dữ liệu tồn kho",
+      "exportError": "Xuất file thất bại",
+      "importSuccess": "Nhập thành công: {{success}} / {{total}}",
+      "importError": "Nhập thất bại",
+      "bulkSuccess": "Cập nhật: {{success}} thành công",
+      "bulkError": "Cập nhật thất bại"
+    },
+    "quickUpdate": {
+      "title": "Cập nhật nhanh",
+      "currentWarehouse": "Kho hiện tại",
+      "fields": {
+        "mode": "Chế độ",
+        "warehouse": "Kho",
+        "stock": "Tồn kho"
+      },
+      "placeholders": {
+        "warehouse": "Chọn kho"
+      },
+      "actions": {
+        "cancel": "Hủy",
+        "save": "Lưu"
+      },
+      "validation": {
+        "warehouse": "Vui lòng chọn kho"
+      }
+    }
+  },
+  "inventoryTable": {
+    "columns": {
+      "product": "Sản phẩm",
+      "variant": "Biến thể",
+      "warehouse": "Kho",
+      "stockOnHand": "Tồn kho",
+      "brand": "Thương hiệu",
+      "category": "Ngành hàng",
+      "status": "Trạng thái",
+      "updatedAt": "Cập nhật",
+      "actions": "Thao tác"
+    },
+    "labels": {
+      "sku": "SKU",
+      "barcode": "Mã vạch",
+      "noVariant": "Không có biến thể"
+    },
+    "status": {
+      "active": "Đang bán",
+      "inactive": "Ngừng bán",
+      "draft": "Nháp"
+    },
+    "pagination": {
+      "total": "{{from}}-{{to}} / {{total}}"
+    },
+    "actions": {
+      "update": "Cập nhật"
+    }
+  },
+  "inventoryImport": {
+    "title": "Nhập tồn kho",
+    "actions": {
+      "downloadSample": "Tải file mẫu",
+      "start": "Bắt đầu nhập"
+    },
+    "mode": {
+      "label": "Chế độ cập nhật",
+      "set": "Set (thay thế)",
+      "increment": "Cộng thêm",
+      "decrement": "Trừ bớt"
+    },
+    "applyTo": {
+      "label": "Áp dụng cho",
+      "mixed": "Cả sản phẩm & biến thể",
+      "base": "Chỉ sản phẩm (không biến thể)",
+      "variant": "Chỉ biến thể"
+    },
+    "file": {
+      "label": "Chọn tệp",
+      "choose": "Chọn tệp CSV / Excel"
+    },
+    "note": "Excel hỗ trợ 3 sheet: BaseOnly (không biến thể), VariantOnly (chỉ biến thể), Mixed (cả hai). Cột cần: sku/barcode hoặc variantSku/variantBarcode, warehouseId/code/name, stockOnHand, mode/applyTo (tuỳ chọn).",
+    "invalidType": "Chỉ hỗ trợ tệp CSV hoặc Excel",
+    "noFile": "Vui lòng chọn file"
+  },
+  "inventoryExport": {
+    "title": "Xuất tồn kho",
+    "actions": {
+      "cancel": "Hủy",
+      "export": "Xuất file"
+    },
+    "columns": {
+      "title": "Chọn cột cần xuất",
+      "placeholder": "Chọn cột",
+      "selectAll": "Chọn tất cả",
+      "clear": "Bỏ chọn",
+      "productId": "Product ID",
+      "productName": "Tên sản phẩm",
+      "sku": "SKU sản phẩm",
+      "barcode": "Barcode sản phẩm",
+      "variantSku": "SKU biến thể",
+      "variantBarcode": "Barcode biến thể",
+      "warehouseId": "ID kho",
+      "warehouseName": "Tên kho",
+      "warehouseCode": "Mã kho",
+      "stockOnHand": "Tồn kho",
+      "brandName": "Thương hiệu",
+      "categoryName": "Ngành hàng",
+      "status": "Trạng thái",
+      "updatedAt": "Cập nhật"
+    },
+    "filters": {
+      "title": "Bộ lọc",
+      "sku": "SKU sản phẩm",
+      "barcode": "Barcode sản phẩm",
+      "variantSku": "SKU biến thể",
+      "variantBarcode": "Barcode biến thể",
+      "warehouse": "Kho",
+      "search": "Tìm kiếm chung"
+    }
+  },
+  "inventoryBulk": {
+    "title": "Cập nhật tồn kho hàng loạt",
+    "actions": {
+      "cancel": "Hủy",
+      "submit": "Cập nhật",
+      "remove": "Xoá",
+      "addRow": "Thêm dòng"
+    },
+    "fields": {
+      "mode": "Chế độ",
+      "applyTo": "Áp dụng",
+      "sku": "SKU sản phẩm",
+      "barcode": "Barcode sản phẩm",
+      "variantSku": "SKU biến thể",
+      "variantBarcode": "Barcode biến thể",
+      "warehouse": "Kho (ID/Code/Tên)",
+      "stock": "Tồn kho",
+      "modeRow": "Mode",
+      "applyToRow": "Áp dụng"
+    },
+    "options": {
+      "mode": {
+        "set": "Set (thay thế)",
+        "increment": "Cộng thêm",
+        "decrement": "Trừ bớt"
+      },
+      "applyTo": {
+        "mixed": "Cả sản phẩm & biến thể",
+        "base": "Chỉ sản phẩm",
+        "variant": "Chỉ biến thể"
+      }
+    },
+    "placeholders": {
+      "sku": "SKU",
+      "barcode": "Barcode",
+      "variantSku": "Variant SKU",
+      "variantBarcode": "Variant barcode",
+      "warehouse": "VD: WH-01",
+      "inherit": "Kế thừa"
+    },
+    "validation": {
+      "warehouse": "Nhập kho",
+      "stock": "Nhập tồn kho"
+    },
+    "errors": {
+      "noItem": "Vui lòng thêm ít nhất một dòng"
+    }
+  }
+}
+

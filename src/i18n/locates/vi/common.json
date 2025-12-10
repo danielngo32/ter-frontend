@@ -1,0 +1,104 @@
+{
+  "nav": {
+    "dashboard": "Tổng quan",
+    "products": "Hàng hóa",
+    "products.list": "Danh sách hàng hóa",
+    "products.categories": "Danh mục",
+    "products.brands": "Thương hiệu",
+    "products.promotions": "Khuyến mãi",
+    "products.warehouse": "Kho hàng",
+    "products.warehouses": "Danh sách kho",
+    "products.inventory": "Tồn kho",
+    "products.tools": "Công cụ",
+    "products.barcodeScanner": "Quét mã vạch",
+    "orders": "Đơn hàng",
+    "customers": "Khách hàng",
+    "employees": "Nhân viên",
+    "cashbook": "Sổ quỹ",
+    "reports": "Báo cáo",
+    "onlineSales": "Kênh online",
+    "sales": "Bán hàng",
+    "profile": "Hồ sơ",
+    "storeProfile": "Hồ sơ cửa hàng",
+    "logout": "Đăng xuất"
+  },
+  "roles": {
+    "owner": "Chủ cửa hàng",
+    "admin": "Quản trị viên",
+    "member": "Nhân viên"
+  },
+  "dashboard": {
+    "title": "Tổng quan",
+    "welcome": "Chào mừng đến với TER",
+    "description": "Quản lý doanh nghiệp của bạn hiệu quả với TER"
+  },
+  "languages": {
+    "english": "English",
+    "vietnamese": "Tiếng Việt"
+  },
+  "profile": {
+    "title": "Hồ sơ cá nhân",
+    "personalInfo": "Thông tin cá nhân",
+    "settings": "Cài đặt",
+    "security": "Bảo mật",
+    "devices": "Thiết bị",
+    "sessions": "Phiên đăng nhập",
+    "fields": {
+      "fullName": "Họ và tên",
+      "email": "Email",
+      "phoneNumber": "Số điện thoại",
+      "gender": "Giới tính",
+      "dateOfBirth": "Ngày sinh",
+      "address": "Địa chỉ",
+      "facebook": "Facebook",
+      "avatarUrl": "Ảnh đại diện",
+      "language": "Ngôn ngữ",
+      "timezone": "Múi giờ",
+      "startOfWeek": "Ngày bắt đầu tuần",
+      "notifications": {
+        "email": "Thông báo qua email",
+        "push": "Thông báo đẩy"
+      }
+    },
+    "genders": {
+      "male": "Nam",
+      "female": "Nữ"
+    },
+    "weeks": {
+      "monday": "Thứ Hai",
+      "sunday": "Chủ Nhật"
+    },
+    "actions": {
+      "save": "Lưu thay đổi",
+      "cancel": "Hủy",
+      "edit": "Chỉnh sửa",
+      "search": "Tìm kiếm"
+    },
+    "messages": {
+      "updateSuccess": "Cập nhật hồ sơ thành công",
+      "updateError": "Cập nhật hồ sơ thất bại",
+      "fetchError": "Không thể tải thông tin hồ sơ",
+      "noDevices": "Không tìm thấy thiết bị",
+      "noSessions": "Không tìm thấy phiên đăng nhập"
+    },
+    "tabs": {
+      "personal": "Thông tin cá nhân",
+      "settings": "Cài đặt",
+      "security": "Bảo mật",
+      "devices": "Thiết bị",
+      "sessions": "Phiên đăng nhập"
+    },
+    "deviceFields": {
+      "deviceName": "Thiết bị",
+      "platform": "Nền tảng",
+      "ipAddress": "Địa chỉ IP",
+      "lastSeenAt": "Lần cuối truy cập"
+    },
+    "sessionFields": {
+      "userAgent": "Trình duyệt",
+      "ipAddress": "Địa chỉ IP",
+      "createdAt": "Ngày tạo"
+    }
+  }
+}
+
