@@ -6,7 +6,12 @@ export const getBaseHostname = () => {
   
   try {
     const url = new URL(frontendUrl);
-    return url.hostname.toLowerCase();
+    let hostname = url.hostname.toLowerCase();
+    // Remove www prefix
+    if (hostname.startsWith('www.')) {
+      hostname = hostname.substring(4);
+    }
+    return hostname;
   } catch {
     return null;
   }
@@ -15,7 +20,11 @@ export const getBaseHostname = () => {
 export const getSubdomain = () => {
   if (typeof window === 'undefined') return null;
   
-  const hostname = window.location.hostname.toLowerCase();
+  let hostname = window.location.hostname.toLowerCase();
+  // Remove www prefix
+  if (hostname.startsWith('www.')) {
+    hostname = hostname.substring(4);
+  }
   const hostnameWithoutPort = hostname.split(':')[0];
   const baseHostname = getBaseHostname();
   
@@ -25,6 +34,10 @@ export const getSubdomain = () => {
     }
     const parts = hostnameWithoutPort.split('.');
     if (parts.length >= 2) {
+      // Don't treat 'www' as subdomain
+      if (parts[0] === 'www') {
+        return null;
+      }
       return parts[0];
     }
     return null;
@@ -36,6 +49,10 @@ export const getSubdomain = () => {
   
   if (hostnameWithoutPort.endsWith(`.${baseHostname}`)) {
     const subdomain = hostnameWithoutPort.replace(`.${baseHostname}`, '');
+    // Don't treat 'www' as subdomain
+    if (subdomain === 'www') {
+      return null;
+    }
     return subdomain || null;
   }
   
@@ -45,7 +62,11 @@ export const getSubdomain = () => {
 export const isMainDomain = () => {
   if (typeof window === 'undefined') return false;
   
-  const hostname = window.location.hostname.toLowerCase();
+  let hostname = window.location.hostname.toLowerCase();
+  // Remove www prefix
+  if (hostname.startsWith('www.')) {
+    hostname = hostname.substring(4);
+  }
   const hostnameWithoutPort = hostname.split(':')[0];
   const baseHostname = getBaseHostname();
   
@@ -75,7 +96,11 @@ export const buildSubdomainUrl = (slug, path = '') => {
     const url = new URL(frontendUrl);
     const protocol = url.protocol;
     const port = url.port ? `:${url.port}` : '';
-    const baseHostname = url.hostname.toLowerCase();
+    let baseHostname = url.hostname.toLowerCase();
+    // Remove www prefix
+    if (baseHostname.startsWith('www.')) {
+      baseHostname = baseHostname.substring(4);
+    }
     
     const subdomainHost = `${slug}.${baseHostname}${port}`;
     const normalizedPath = path ? (path.startsWith('/') ? path : `/${path}`) : '';

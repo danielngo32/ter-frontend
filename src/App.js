@@ -48,6 +48,21 @@ const LocaleLayout = () => {
   const [prevPath, setPrevPath] = useState(location.pathname);
   const [checkingSubdomain, setCheckingSubdomain] = useState(false);
 
+  // Redirect www to non-www
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    
+    const hostname = window.location.hostname.toLowerCase();
+    if (hostname.startsWith('www.')) {
+      const newHostname = hostname.substring(4);
+      const protocol = window.location.protocol;
+      const port = window.location.port ? `:${window.location.port}` : '';
+      const newUrl = `${protocol}//${newHostname}${port}${window.location.pathname}${window.location.search}${window.location.hash}`;
+      window.location.replace(newUrl);
+      return;
+    }
+  }, []);
+
   useEffect(() => {
     if (typeof window === 'undefined') return;
     
