@@ -81,7 +81,7 @@ export const isSubdomain = () => {
   return getSubdomain() !== null;
 };
 
-export const buildSubdomainUrl = (slug, path = '') => {
+export const buildSubdomainUrl = (slug, path = '', includeAuth = false) => {
   if (typeof window === 'undefined') return '';
   if (!slug || typeof slug !== 'string') {
     throw new Error('Slug is required');
@@ -105,7 +105,23 @@ export const buildSubdomainUrl = (slug, path = '') => {
     const subdomainHost = `${slug}.${baseHostname}${port}`;
     const normalizedPath = path ? (path.startsWith('/') ? path : `/${path}`) : '';
     
-    return `${protocol}//${subdomainHost}${normalizedPath}`;
+    let finalUrl = `${protocol}//${subdomainHost}${normalizedPath}`;
+    
+    // If includeAuth is true, add user info to URL hash for localStorage sync
+    if (includeAuth && typeof window !== 'undefined') {
+      const user = localStorage.getItem('user');
+      const tenantSlug = localStorage.getItem('tenantSlug');
+      if (user || tenantSlug) {
+        const authData = {
+          user: user ? JSON.parse(user) : null,
+          tenantSlug: tenantSlug || null,
+        };
+        // Use hash instead of query to avoid exposing in server logs
+        finalUrl += `#auth=${encodeURIComponent(JSON.stringify(authData))}`;
+      }
+    }
+    
+    return finalUrl;
   } catch (error) {
     throw new Error(`Invalid REACT_APP_FRONTEND_URL: ${frontendUrl}`);
   }

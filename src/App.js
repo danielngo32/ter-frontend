@@ -63,6 +63,31 @@ const LocaleLayout = () => {
     }
   }, []);
 
+  // Sync auth data from URL hash when landing on subdomain
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    
+    const hash = window.location.hash;
+    if (hash && hash.startsWith('#auth=')) {
+      try {
+        const authDataStr = decodeURIComponent(hash.substring(6));
+        const authData = JSON.parse(authDataStr);
+        
+        if (authData.user) {
+          localStorage.setItem('user', JSON.stringify(authData.user));
+        }
+        if (authData.tenantSlug) {
+          localStorage.setItem('tenantSlug', authData.tenantSlug);
+        }
+        
+        // Remove hash from URL
+        window.history.replaceState(null, '', window.location.pathname + window.location.search);
+      } catch (error) {
+        console.error('Error parsing auth data from URL:', error);
+      }
+    }
+  }, []);
+
   useEffect(() => {
     if (typeof window === 'undefined') return;
     

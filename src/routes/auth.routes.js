@@ -72,7 +72,7 @@ export const ProtectedRoute = ({ children }) => {
         const pathWithLocale = currentPath.startsWith(`/${savedLocale}/`) 
           ? currentPath 
           : `/${savedLocale}${currentPath.startsWith('/') ? currentPath : `/${currentPath}`}`;
-        const subdomainUrl = buildSubdomainUrl(tenantSlug, pathWithLocale);
+        const subdomainUrl = buildSubdomainUrl(tenantSlug, pathWithLocale, true);
         window.location.href = subdomainUrl;
       }
     };

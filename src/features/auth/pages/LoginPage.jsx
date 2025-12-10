@@ -196,13 +196,13 @@ const LoginPage = () => {
         localStorage.setItem('preferredLocale', currentLocale);
         
         if (tenantSlug) {
-          const subdomainUrl = buildSubdomainUrl(tenantSlug, `/${currentLocale}/dashboard`);
+          const subdomainUrl = buildSubdomainUrl(tenantSlug, `/${currentLocale}/dashboard`, true);
           window.location.replace(subdomainUrl);
           return;
         }
         tenantSlug = response?.tenantSlug || localStorage.getItem('tenantSlug') || response?.user?.tenantSlug;
         if (tenantSlug) {
-          const subdomainUrl = buildSubdomainUrl(tenantSlug, `/${currentLocale}/dashboard`);
+          const subdomainUrl = buildSubdomainUrl(tenantSlug, `/${currentLocale}/dashboard`, true);
           window.location.replace(subdomainUrl);
           return;
         }
@@ -214,7 +214,7 @@ const LoginPage = () => {
       } else {
         const finalSlug = tenantSlug || subdomainSlug || response?.tenantSlug || localStorage.getItem('tenantSlug') || response?.user?.tenantSlug;
         if (finalSlug) {
-          const subdomainUrl = buildSubdomainUrl(finalSlug, `/${currentLocale}/dashboard`);
+          const subdomainUrl = buildSubdomainUrl(finalSlug, `/${currentLocale}/dashboard`, true);
           window.location.replace(subdomainUrl);
         } else {
           navigate(`/${currentLocale}/dashboard`, { replace: true });
