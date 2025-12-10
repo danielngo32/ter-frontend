@@ -11,7 +11,6 @@ import {
 import { ConfigProvider } from 'antd';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
-import { HelmetProvider } from 'react-helmet-async';
 import { authRoutes, ProtectedRoute } from './routes/auth.routes';
 import { profileRoutes } from './routes/profile.routes';
 import { mainRoutes } from './routes/main.routes';
@@ -47,7 +46,6 @@ const LocaleLayout = () => {
   const normalizedLocale = normalizeLocale(locale || DEFAULT_LOCALE);
   const [loading, setLoading] = useState(false);
   const [prevPath, setPrevPath] = useState(location.pathname);
-  const [processingToken, setProcessingToken] = useState(false);
   const [checkingSubdomain, setCheckingSubdomain] = useState(false);
 
   useEffect(() => {
@@ -159,7 +157,7 @@ const LocaleLayout = () => {
     };
   }, [location.pathname, prevPath]);
 
-  if (processingToken || loading || checkingSubdomain) {
+  if (loading || checkingSubdomain) {
     return <LoadingSpinner />;
   }
 
@@ -283,27 +281,25 @@ const muiTheme = createTheme({
 
 function App() {
   return (
-    <HelmetProvider>
-      <ThemeProvider theme={muiTheme}>
-        <CssBaseline />
-        <ConfigProvider
-          theme={{
-            token: {
-              colorPrimary: '#1a237e',
-              borderRadius: 8,
-            },
-          }}
-        >
-          <BrowserRouter>
-            <Routes>
-              <Route path="/" element={<LocaleRedirect />} />
-              <Route path="/:locale/*" element={<LocaleLayout />} />
-              <Route path="*" element={<Navigate to="/" replace />} />
-            </Routes>
-          </BrowserRouter>
-        </ConfigProvider>
-      </ThemeProvider>
-    </HelmetProvider>
+    <ThemeProvider theme={muiTheme}>
+      <CssBaseline />
+      <ConfigProvider
+        theme={{
+          token: {
+            colorPrimary: '#1a237e',
+            borderRadius: 8,
+          },
+        }}
+      >
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<LocaleRedirect />} />
+            <Route path="/:locale/*" element={<LocaleLayout />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
+          </Routes>
+        </BrowserRouter>
+      </ConfigProvider>
+    </ThemeProvider>
   );
 }
 
